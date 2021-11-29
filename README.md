@@ -24,9 +24,9 @@ public class DemoApplication {
 	}
 
 	@RequestMapping("/")
-	public String home() {
-		return "Hello Docker World";
-	}
+	public String home() throws UnknownHostException {
+        return "Hello K8s, host name is "+Inet4Address.getLocalHost().getHostName();
+    }
 }
 ```
 

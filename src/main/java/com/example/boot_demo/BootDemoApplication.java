@@ -20,6 +20,6 @@ public class BootDemoApplication {
 
     @RequestMapping("/")
     public String home() throws UnknownHostException {
-        return "Hello Docker World, host name is "+Inet4Address.getLocalHost().getHostName();
+        return "Hello K8s, host name is "+Inet4Address.getLocalHost().getHostName();
     }
 }
